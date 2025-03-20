@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback</title>
+</head>
+<body>
+    <h1>Feedback</h1>
+    <ul>
+    {% for feedback in feedback_data %}
+        <li>
+            <p>Name: {{ feedback.name }}</p>
+            <p>Email: {{ feedback.email }}</p>
+            <p>Feedback: {{ feedback.feedback }}</p>
+        </li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
